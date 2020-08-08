@@ -5,7 +5,12 @@ import "./form-input.styles.scss";
 const FormInput = ({ handleChange, label, value, ...otherProps }) => {
   return (
     <div className="group">
-      <input {...otherProps} className="form-input" onChange={handleChange} />
+      <input
+        {...otherProps}
+        value={value}
+        className="form-input"
+        onChange={handleChange}
+      />
       {label ? (
         <label
           className={
