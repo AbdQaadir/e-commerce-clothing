@@ -18,7 +18,6 @@ class SignIn extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-
     this.setState({
       email: "",
       password: "",
